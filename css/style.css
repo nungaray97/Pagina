@@ -1,0 +1,125 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Quicksand;
+}
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: .3s; 	
+}
+nav.black{
+	background: rgb(0,0,0,0.8);
+	height: 100px;
+	padding: 10px 100px;
+}
+nav .logo{
+	padding: 22px 20px;
+	height: 80px;
+	float: left;
+	font-size: 24px;
+	transition: .3s;
+}
+nav.black .logo{
+	color: #ffff;
+}
+nav ul{
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li{
+	list-style: none;
+}
+nav ul li a{
+	line-height: 80px;
+	color: #151515;
+	padding: 12px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .3s;
+}
+nav ul li a:hover{
+	background: #4747d1;
+	color: #ffff;
+	border-radius: 6px;	
+}
+nav.black ul li a{
+	color: #ffff;
+}
+nav ul li a:focus{
+	outline: none;
+}
+nav ul li a.active{
+    border-bottom: 1px solid #4747d1;
+}
+section.sec1{
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/ejem.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.content1{
+	margin-top: -29px;
+	background-color: #E9EEF0;
+}
+ p{
+	width: 900px;
+	margin: 30px auto;
+	padding: 20px;
+	text-align: justify;
+	font-size: 20px;
+	line-height: 30px;
+}
+.content2{
+	background-color: #4747d1;
+	margin-top: -30px; 
+}
+h1{
+	margin-left: 500px;
+	float: left;
+	position: relative;
+
+}
+h1 span{
+	position: absolute;
+	right: 0;
+	width: 0;
+	background: #4747d1;
+	border-left: 1px solid #000;
+
+	animation: maquina 5s infinite alternate steps(32);
+}
+@keyframes maquina{
+	from{
+		width: 100%;
+	}
+	to{
+		width: 0;
+	}
+}
+section{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+.parallax{
+	background: #fff fixed no-repeat 50% 50%;
+	background-size: cover;
+}
+#seccion1{
+	background-image: url("../img/oficina.jpg");
+}
+h2{
+	margin: 0 350px;
+	padding: 50px;
+}
