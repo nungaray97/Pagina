@@ -107,13 +107,13 @@ border-radius: 5px;
 .Service:hover .text-service{
 	color: white;
 }
-.image-service{
+.image-service , .image-nosotros{
 	margin: 0 auto;
 	margin-top: 20px;
 	width: 100px;
 	height: 100px;
 }
-.image-service img{
+.image-service img , .image-nosotros img{
 	width: 100%;
 }
 .title-service{
@@ -128,4 +128,22 @@ border-radius: 5px;
   font-family: 'Tajawal', sans-serif;
 	font-size: 1.1em;
 	margin: 0 auto;
+}
+.contenedor-nosotros{
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.nosotros{
+	width: 33%;
+	height: 300px;
+	margin-top: 50px;
+}
+#centro{
+	border-left: 1px solid black;
+	border-right: 1px solid black;
 }
