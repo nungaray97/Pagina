@@ -163,7 +163,9 @@ nav ul li a.active{
  	height: 500px;
  	background-color:black;
  	margin-bottom: 20px;
-  	position: relative;
+	  position: relative;
+	display: flex;
+	align-items: center;
  }
  .img-portfolio{
  	width: 100%;
@@ -181,7 +183,7 @@ nav ul li a.active{
   width: 100%;
   text-align: center;
   vertical-align: text-bottom;
-	top: 40%;
+	/* top: 40%; */
 	font-family: 'Nunito', sans-serif;
  }
  .title-portfolio,.text-portfolio{
