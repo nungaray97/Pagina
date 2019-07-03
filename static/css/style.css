@@ -1,71 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body{
 	margin: 0;
 	padding: 0;
 	font-family: Quicksand;
 	background-color: white;
 }
-nav{
+header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100px;
-	padding: 10px 100px;
-	box-sizing: border-box;
+	padding: 0 50px;
 	transition: .3s;
 	color: white;
-	background: rgb(0,0,0,0.8);
+	/* background: rgb(0,0,0,0.8); */
 	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
-nav.black{
-	background: rgb(0,0,0,0.9);
-	height: 100px;
-	padding: 10px 100px;
-}
-nav .logo{
+
+header .logo{
 	padding: 22px 20px;
-	height: 80px;
 	float: left;
 	font-size: 24px;
 	transition: .3s;
+    font-family: 'Nunito', sans-serif;
+	color: #1B9CFC;
 }
-nav.black .logo{
-	color: #ffff;
-}
+
 nav ul{
 	list-style: none;
-	float: right;
-	margin: 0;
-	padding: 0;
 	display: flex;
 }
 nav ul li{
 	list-style: none;
 }
 nav ul li a{
-	line-height: 80px;
 	color: #151515;
 	padding: 12px 30px;
 	text-decoration: none;
-	text-transform: uppercase;
 	transition: .3s;
-	color: white;
-  font-family: 'Nunito', sans-serif;
+	color: #8a8a8a;
+	font-family: 'Nunito', sans-serif;
+	font-size: 1em;  
 }
-nav ul li a:hover{
-	background:#068fbd;
-	color: #ffff;
-	border-radius: 6px;
-}
-nav.black ul li a{
-	color: #ffff;
+
+header.black nav ul li a{
+	color: #8a8a8a;
 }
 nav ul li a:focus{
 	outline: none;
 }
 nav ul li a.active{
-    border-bottom: 1px solid #4747d1;
+    border-bottom: 3px solid #1B9CFC;
 }
+
+header.black {
+	height: 50px;
+	background-color: #FFF;
+	color: #8a8a8a;
+	box-shadow: 0 0 5px 0 lightslategray;
+}
+
+header nav ul li a:hover{
+	background: #1B9CFC;
+	color: #ffff;
+}
+	.icon-menu {
+		height: 25px;
+		width: 25px;
+		background-image: url("../imagenes/menu.svg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 100%;
+		display: none;
+	}
+
 .banner{
 	width: 100%;
 	height:85vh;
@@ -194,4 +211,22 @@ nav ul li a.active{
  }
  .text-portfolio{
 	 font-size: 25px;
+ }
+
+ @media screen and (max-width: 990px) {
+	nav ul {
+		display: none;
+	}
+	.icon-menu {
+		display: block;
+	}
+ }
+
+ @media screen and (max-width: 766px) {
+	 header {
+		padding: 0 25px;
+	 }
+	 header.black {
+		 height: 65px;
+	 }
  }
